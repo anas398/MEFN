@@ -39,7 +39,9 @@ class _BannerWidgetsState extends State<BannerWidgets> {
             future: futurebanners,
             builder: (context,snapshot){
               if(snapshot.connectionState==ConnectionState.waiting){
-                return CircularProgressIndicator();
+                return Center(child: SizedBox(
+                    width:30 ,height: 30,
+                    child: CircularProgressIndicator()));
 
               }else if(snapshot.hasError){
                 return Center(
