@@ -1,0 +1,1 @@
+String uri ="http://192.168.70.184:2000"; //Own ipaddress with Port
